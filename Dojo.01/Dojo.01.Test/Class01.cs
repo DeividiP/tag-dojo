@@ -29,9 +29,9 @@ namespace Dojo._01.Test
 
             //Act
             var result = Jogar.Start(jogador1, jogador2);
-            
-                //Assert
-                Assert.Equal("Pedra venceu ! ", result);
+
+            //Assert
+            Assert.Equal("Pedra venceu!", result);
         }
 
         [Fact]
@@ -47,15 +47,19 @@ namespace Dojo._01.Test
             //Assert
             Assert.Equal("Papel venceu!", result);
         }
+
+        [Fact]
+        public void Given_Jogar_When_Player1_Tesoura_Player2_Papel_Then_Player1Ganha()
+        {
+            //Arrange
+            var jogador1 = "tesoura";
+            var jogador2 = "papel";
+
+            //Act
+            var result = Jogar.Start(jogador1, jogador2);
+
+            //Assert
+            Assert.Equal("Tesoura venceu!", result);
+        }
     }
-
-
-
-
-
-
-
-
-
-
 }

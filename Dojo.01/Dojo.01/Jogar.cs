@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dojo._01
 {
-   public static class Jogar
+    public static class Jogar
     {
 
         public static string Start(string jogada1, string jogada2)
@@ -18,24 +18,20 @@ namespace Dojo._01
 
             if (jogada1 == "pedra" && jogada2 == "tesoura")
             {
-                return "Pedra venceu ! ";
+                return "Pedra venceu!";
+            }
+
+            if (jogada1 == "tesoura" && jogada2 == "papel")
+            {
+                return "Tesoura venceu!";
             }
 
             if (jogada1 == "pedra" && jogada2 == "papel")
             {
-                return "Pedra venceu ! ";
+                return "Papel venceu!";
             }
-
 
             throw new NotImplementedException("Jogada nao implementada");
         }
-
-
-
-
-
-
-
-
     }
 }
