@@ -5,4 +5,8 @@
     <RootNamespace>Dojo._01</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+
 </Project>
